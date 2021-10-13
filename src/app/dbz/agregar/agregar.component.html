@@ -1,0 +1,15 @@
+<h3>Agregar <small>{{nuevo.nombre}}</small></h3>
+<hr>
+<form (ngSubmit)="agregar()">
+
+    <!-- name="nombre" [(ngModel)]="nuevo.nombre" es el concepto de "two way data binding" emite como reibe propiedades --->
+    <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre" />
+    <!--  [value]="nuevo.nombre" --->
+
+    <!-- name="poder" [(ngModel)]="nuevo.poder" es el concepto de "two way data binding emite como reibe propiedades" --->
+    <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder" />
+    <!-- [value]="nuevo.poder" --->
+
+    <button type="submit">Agregar</button>
+
+</form>
